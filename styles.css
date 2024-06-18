@@ -1,0 +1,288 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Ensures items are spaced apart */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure the container takes full width */
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+    margin: 0; /* Remove default margin */
+}
+
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 60%;
+    position: relative; /* Ensure the banner container is positioned relative */
+}
+
+.banner-image {
+    position: relative;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.side-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-image img {
+    max-width: 84%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.category {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.category-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.category h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.category-image img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.shop-now {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.shop-now:hover {
+    background-color: #0056b3;
+}
+
+.new-products-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.new-products-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    width: 100%;
+}
+
+/* Custom CSS for slick carousel */
+.slick-prev, .slick-next {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #007bff;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.product {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-nav li {
+    margin-left: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 80%; /* Adjust banner width for smaller screens */
+    }
+
+    .banner-text {
+        width: 90%; /* Adjusted width for smaller screens */
+        font-size: 0.9em; /* Adjusted font size for smaller screens */
+    }
+
+    .banner-text h3 {
+        font-size: 1.2em; /* Adjusted heading font size for smaller screens */
+    }
+    .categories {
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .category {
+        flex: 1 1 calc(50% - 20px); /* Two items per row (50% width minus margin) */
+        max-width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+}
